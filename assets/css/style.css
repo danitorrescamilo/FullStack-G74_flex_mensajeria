@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+}
+header h1{
+    color: #ad96c7;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
+    background-color: grey;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 16px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a i{
+    padding: 0px 10px;
+}
+nav ul li a:hover{
+    color:goldenrod;
+    text-decoration: none;
+}
+aside{
+    flex: 200px;
+    padding: 10px;
+    border-right: solid 1px #EEEEEE;
+    /* background-color: blueviolet; */
+}
+section{
+    flex:60%;
+    background-color: white;
+    padding: 20px;
+}
+footer{
+    display: flex;
+    justify-content: space-between; /*Separación gacia extremos derecha e izquierda*/
+    align-items: center; /*Centrado eje horizontal*/
+    padding: 10px;
+    background-color: black;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedor__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    border-top: solid 1px grey;
+}
+
+.contenedor__menu__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+    border-bottom: solid 1px grey;
+}
+
+.contenedor__menu__img{
+    background-color: white;
+}
+.contenedor__menu__img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+/* MANU NAME */
+.contenedor__menu__name{
+    width: 100%;
+    background-color: white;
+}
+.contenedor__menu__name ul{
+    padding: 0px;
+}
+.contenedor__menu__name ul li{
+    list-style: none;
+}
+.name{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ad96c7;
+}
+.description{
+    font-size: 14px;
+}
+
+/* MENU ICO */
+.contenedor__menu__ico{
+    background-color: white;
+}
+.contenedor__menu__ico ul{
+    font-size: 24px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.contenedor__menu__ico ul li{
+    list-style: none;
+    margin: 5px;
+}
+.contenedor__menu__ico ul li a:hover{
+    color: blueviolet;
+}
+
+/* MENU BTN */
+.contenedor__menu__btn{
+    display: flex;
+    justify-content: center;
+}
+.contenedor__menu__btn a{
+    text-decoration: none;
+}
+.contenedor__menu__btn a:hover{
+    background-color: blueviolet;
+}
+.btn-chat{
+    background-color: #ad96c7;
+    border: none;
+    color: white;
+    padding: 20px 80px;
+    margin: 30px;
+    border-radius: 8px; 
+}
+.boxcenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Alinea al Centro*/
+    align-items: center;
+    background-color: #EEEEEE;
+}
+.bold{
+    font-weight: 700;
+}
+.boxcenter__title{
+    font-size: 32px;
+    color: black;
+    padding: 10px;
+}
+.boxcenter img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 16px;
+    border-radius: 16px;
+    justify-content: center; /* centrado texto horizontal */
+    align-content: center; /* centrado texto vertical */    
+}
+.boxcenter ul{
+    list-style: none;
+    text-align: center;
+    padding: 0; 
+}
+.boxcenter ul li{
+    max-width: 520px;
+    text-align: center;
+}
+.footer__logo{
+    font-size: 1.5em;
+    color: white;
+    padding: 5px;
+    /* background-color: red; */
+}
+.footer__social{
+    background-color: black;
+}
+.footer__social ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+.footer__social ul li{
+    margin: 5px 10px;
+}
+.footer__social ul li a{
+    color: #ad96c7;
+    font-size: 24px;
+}
+.footer__social ul li a:hover{
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px){
+
+    nav ul, .contenedor{
+        flex-direction: column;
+    }
+    footer, .footer__logo, .footer__social{
+        flex-direction: column;
+        align-content: center;
+        color: #ffffff;
+        background-color:blueviolet;
+    }
+    .contenedor__menu__right{
+        background-color: green;
+        align-content: center;
+        padding: 0px 10px;
+    }
+    .footer__social ul{
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+
+    nav ul, .contenedor{
+        flex-direction: column;
+    }
+    footer, .footer__logo, .footer__social, .footer__social ul li a{
+        flex-direction: column;
+        align-content: center;
+        color: #ffffff;
+        background-color: red;
+    }
+    .contenedor__menu__right{
+        background-color: green;
+        align-content: center;
+        padding: 0px 10px;
+    }
+
+}
